@@ -1,0 +1,47 @@
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.exe
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.deps.json
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.runtimeconfig.json
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.runtimeconfig.dev.json
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.dll
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.pdb
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.csprojAssemblyReference.cache
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.AssemblyInfoInputs.cache
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.AssemblyInfo.cs
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.dll
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.pdb
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\sfml-audio.dll
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\sfml-graphics.dll
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\sfml-system.dll
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\sfml-window.dll
+C:\Users\Edgar V. C. VITAL\source\repos\Batalha Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.csproj.CopyComplete
+C:\Users\Iris Viana\Desktop\PLP\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.csprojAssemblyReference.cache
+C:\Users\Iris Viana\Desktop\PLP\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.AssemblyInfoInputs.cache
+C:\Users\Iris Viana\Desktop\PLP\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.AssemblyInfo.cs
+C:\Users\Iris Viana\Desktop\PLP\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.dll
+C:\Users\Iris Viana\Desktop\PLP\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.pdb
+E:\Batalha Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.csprojAssemblyReference.cache
+E:\Batalha Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.AssemblyInfoInputs.cache
+E:\Batalha Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.AssemblyInfo.cs
+E:\Batalha Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.dll
+E:\Batalha Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.pdb
+E:\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.exe
+E:\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.deps.json
+E:\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.runtimeconfig.json
+E:\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.runtimeconfig.dev.json
+E:\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.dll
+E:\Batalha Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.pdb
+E:\Batalha Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.csproj.CopyComplete
+D:\UFAPE\PLP\Batalha-Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.exe
+D:\UFAPE\PLP\Batalha-Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.deps.json
+D:\UFAPE\PLP\Batalha-Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.runtimeconfig.json
+D:\UFAPE\PLP\Batalha-Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.runtimeconfig.dev.json
+D:\UFAPE\PLP\Batalha-Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.dll
+D:\UFAPE\PLP\Batalha-Naval\Batalha Naval\bin\Debug\netcoreapp3.0\Batalha Naval.pdb
+D:\UFAPE\PLP\Batalha-Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.csproj.AssemblyReference.cache
+D:\UFAPE\PLP\Batalha-Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.AssemblyInfoInputs.cache
+D:\UFAPE\PLP\Batalha-Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.AssemblyInfo.cs
+D:\UFAPE\PLP\Batalha-Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.csproj.CoreCompileInputs.cache
+D:\UFAPE\PLP\Batalha-Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.csproj.CopyComplete
+D:\UFAPE\PLP\Batalha-Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.dll
+D:\UFAPE\PLP\Batalha-Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.pdb
+D:\UFAPE\PLP\Batalha-Naval\Batalha Naval\obj\Debug\netcoreapp3.0\Batalha Naval.genruntimeconfig.cache
