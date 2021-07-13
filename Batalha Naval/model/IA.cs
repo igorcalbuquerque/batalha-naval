@@ -48,13 +48,14 @@ namespace Batalha_Naval.model
 
         private bool validarPosicaoBarco(Peca barco, bool orientacao, int x, int y)
         {
-
-            bool validarPosicao = true;
+            
+            bool validarPosicao = true; /* Inicia como True, caso não satisfaça as condições dentro do laço, permanece True */
 
             for (int i = 0; i < barco.getTamanho(); i++)
             {
                 if (orientacao)
                 {
+                    /* Se o tamanho do barco no eixo X for maior do que o tamanho do tabuleiro, não é valido */
                     if ((x + barco.getTamanho()) > tabuleiro.getTabuleiroTamanho() ||
                     tabuleiro.getPecas()[x + i, y].GetType() != typeof(Agua))
                     {
@@ -64,6 +65,7 @@ namespace Batalha_Naval.model
                 }
                 else
                 {
+                    /* Se o tamanho do barco no eixo Y for maior do que o tamanho do tabuleiro, não é valido */
                     if ((y + barco.getTamanho()) > tabuleiro.getTabuleiroTamanho() ||
                     tabuleiro.getPecas()[x, y + i].GetType() != typeof(Agua))
                     {
@@ -73,6 +75,7 @@ namespace Batalha_Naval.model
                 }
             }
 
+            /* Sendo válida a posição, a embarcação é posicionada obedecendo os parametros de entrada do método */
             if (validarPosicao)
             {
                 for (int i = 0; i < barco.getTamanho(); i++)
@@ -87,6 +90,8 @@ namespace Batalha_Naval.model
                     }
                 }
             }
+               
+            /* Seta a posicao da embarcacao */
 
             barco.setOrientacao(orientacao);
             barco.setXInicial(x);
@@ -97,9 +102,9 @@ namespace Batalha_Naval.model
 
         public void posicaoBarcos()
         {
-            insereBarcosLista();
+            insereBarcosLista(); /* Embarcacoes inseridas no array */
 
-            bool[] orientacao = new bool[2];
+            bool[] orientacao = new bool[2]; /* Vertical ou horizontal */
             orientacao[0] = true;
             orientacao[1] = false;
 
@@ -107,6 +112,7 @@ namespace Batalha_Naval.model
             int xRandom;
             int yRandom;
 
+            /* Posicionamento aleatório dos barcos fazendo uso do random */
             for (int i = 0; i < barcos.Count; i++)
             {
                 while (true)
@@ -252,8 +258,8 @@ namespace Batalha_Naval.model
                 }
 
                 tbJogador.getPecas()[eixoX, eixoY] = new TiroEmbarcacao(true);
-                posicoesFinaisBarcoAtigindoEixoX.Add(eixoX);
-                posicoesFinaisBarcoAtigindoEixoY.Add(eixoY);
+                posicoesFinaisBarcoAtigindoEixoX.Add(eixoX); // Guarda as posições ao acertar
+                posicoesFinaisBarcoAtigindoEixoY.Add(eixoY); // Guarda as posições ao acertar
                 acertou = true;
             }
             else
@@ -263,7 +269,7 @@ namespace Batalha_Naval.model
             }
 
             if (tamanhoBarco <= 0)
-            {
+            { // Ao atingir todas as casas ocupadas pela embarcacao, cai nesta condicao e irá zerar as listas com posicoes finais
                 tbJogador.getPecas()[eixoX, eixoY] = new TiroEmbarcacao(true);
                 contadorBarcos -= 1;
                 posicoesFinaisBarcoAtigindoEixoX.Clear();
