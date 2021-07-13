@@ -180,7 +180,7 @@ namespace Batalha_Naval.view
                         }
                         /* Vitoria do jogador -> ocorre quando o total de barcos no tabuleiro da IA for igual a zero, pois a cada embarcação atingida por completo é decrementado da variável
                            que atribui a quantidade de embarcacoes no tabuleiro, o que acertar as 5 embarcacoes primeiro vence */
-                        if (controlador.contadorBarcosComputador() == 0)
+                        if (controlador.contadorBarcosJogador() == 0)
                         {
                             vencedor = "Player"; // condicao satisfeita, a string é setada com o 'nome' do vencedor e utilizada no for abaixo
                             jogo = false;
@@ -202,7 +202,7 @@ namespace Batalha_Naval.view
                         jogadaComputador = false;
                     }
                     /* Vitoria do computador -> mesmo esquema da do jogador */
-                    if (controlador.contadorBarcosJogador() == 0)
+                    if (controlador.contadorBarcosComputador() == 0)
                     {
                         vencedor = "Computador"; // condicao satisfeita, a string é setada com o 'nome' do vencedor e utilizada no for abaixo
                         jogo = false;

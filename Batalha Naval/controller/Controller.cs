@@ -55,12 +55,12 @@ namespace Batalha_Naval
             return jogo.getTabuleiroComputador();
         }
 
-        public int contadorBarcosJogador()
+        public int contadorBarcosComputador()
         {
             return jogo.getContadorBarcosJogador();
         }
 
-        public int contadorBarcosComputador()
+        public int contadorBarcosJogador()
         {
             return jogo.getContadorBarcosIA();
         }
