@@ -134,7 +134,7 @@ namespace Batalha_Naval.model
             }
         }
 
-        private (int, int) escolherEixo(Tabuleiro tabPlayer)
+        private (int, int) escolherEixo(Tabuleiro tabuleiroJogador)
         {
             int eixoX = 0;
             int eixoY = 0;
@@ -159,7 +159,7 @@ namespace Batalha_Naval.model
 
                     if (ultimaDirecao.Equals(direcaoCorreta.x_Plus))
                     {
-                        if (eixoX + 1 < 10 && !tabPlayer.getPecas()[eixoX + 1, eixoY].getFoiAtingido())
+                        if (eixoX + 1 < 10 && !tabuleiroJogador.getPecas()[eixoX + 1, eixoY].getFoiAtingido())
                         {
                             eixoX++;
                         }
@@ -170,7 +170,7 @@ namespace Batalha_Naval.model
                     }
                     if (ultimaDirecao.Equals(direcaoCorreta.x_Minus))
                     {
-                        if (eixoX - 1 >= 0 && !tabPlayer.getPecas()[eixoX - 1, eixoY].getFoiAtingido())
+                        if (eixoX - 1 >= 0 && !tabuleiroJogador.getPecas()[eixoX - 1, eixoY].getFoiAtingido())
                         {
                             eixoX--;
                         }
@@ -181,7 +181,7 @@ namespace Batalha_Naval.model
                     }
                     if (ultimaDirecao.Equals(direcaoCorreta.y_Plus))
                     {
-                        if (eixoY + 1 < 10 && !tabPlayer.getPecas()[eixoX, eixoY + 1].getFoiAtingido())
+                        if (eixoY + 1 < 10 && !tabuleiroJogador.getPecas()[eixoX, eixoY + 1].getFoiAtingido())
                         {
                             eixoY++;
                         }
@@ -192,7 +192,7 @@ namespace Batalha_Naval.model
                     }
                     if (ultimaDirecao.Equals(direcaoCorreta.y_Minus))
                     {
-                        if (eixoY - 1 >= 0 && !tabPlayer.getPecas()[eixoX, eixoY - 1].getFoiAtingido())
+                        if (eixoY - 1 >= 0 && !tabuleiroJogador.getPecas()[eixoX, eixoY - 1].getFoiAtingido())
                         {
                             eixoY--;
                         }
@@ -214,7 +214,7 @@ namespace Batalha_Naval.model
                     }
                 }
 
-                if (!tabPlayer.getPecas()[eixoX, eixoY].getFoiAtingido() && checkPosicaoTiro)
+                if (!tabuleiroJogador.getPecas()[eixoX, eixoY].getFoiAtingido() && checkPosicaoTiro)
                 {
                     break;
                 }
@@ -233,15 +233,15 @@ namespace Batalha_Naval.model
             return (eixoX, eixoY);
         }
 
-        public bool atirar(Tabuleiro tbJogador)
+        public bool atirar(Tabuleiro tabuleiroJogador)
         {
             bool acertou = false;
-            var (eixoXVar, eixoYVar) = escolherEixo(tbJogador);
+            var (eixoXVar, eixoYVar) = escolherEixo(tabuleiroJogador);
 
             int eixoX = eixoXVar;
             int eixoY = eixoYVar;
 
-            Peca barco = tbJogador.getPecas()[eixoX, eixoY];
+            Peca barco = tabuleiroJogador.getPecas()[eixoX, eixoY];
             int tamanhoBarco = barco.getTamanho();
 
             jogadasEixoX.Add(eixoX);
@@ -249,28 +249,28 @@ namespace Batalha_Naval.model
 
             if (barco.GetType() != typeof(Agua))
             {
-                tbJogador.getPecas()[eixoX, eixoY].setTamanho(tamanhoBarco - 1);
-                tamanhoBarco = tbJogador.getPecas()[eixoX, eixoY].getTamanho();
+                tabuleiroJogador.getPecas()[eixoX, eixoY].setTamanho(tamanhoBarco - 1);
+                tamanhoBarco = tabuleiroJogador.getPecas()[eixoX, eixoY].getTamanho();
 
                 if (tamanhoBarco <= 0)
                 {
-                    tbJogador.getPecas()[eixoX, eixoY].setFoiAtingido(true);
+                    tabuleiroJogador.getPecas()[eixoX, eixoY].setFoiAtingido(true);
                 }
 
-                tbJogador.getPecas()[eixoX, eixoY] = new TiroEmbarcacao(true);
+                tabuleiroJogador.getPecas()[eixoX, eixoY] = new TiroEmbarcacao(true);
                 posicoesFinaisBarcoAtigindoEixoX.Add(eixoX); // Guarda as posições ao acertar
                 posicoesFinaisBarcoAtigindoEixoY.Add(eixoY); // Guarda as posições ao acertar
                 acertou = true;
             }
             else
             {
-                tbJogador.getPecas()[eixoX, eixoY] = new TiroAgua(true);
+                tabuleiroJogador.getPecas()[eixoX, eixoY] = new TiroAgua(true);
                 acertou = false;
             }
 
             if (tamanhoBarco <= 0)
             { // Ao atingir todas as casas ocupadas pela embarcacao, cai nesta condicao e irá zerar as listas com posicoes finais
-                tbJogador.getPecas()[eixoX, eixoY] = new TiroEmbarcacao(true);
+                tabuleiroJogador.getPecas()[eixoX, eixoY] = new TiroEmbarcacao(true);
                 contadorBarcos -= 1;
                 posicoesFinaisBarcoAtigindoEixoX.Clear();
                 posicoesFinaisBarcoAtigindoEixoY.Clear();
