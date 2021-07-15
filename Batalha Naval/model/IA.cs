@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace Batalha_Naval.model
 {
@@ -141,6 +142,8 @@ namespace Batalha_Naval.model
 
             while (true)
             {
+                Thread.Sleep(1000);
+
                 if (jogadasEixoX.Count == 0)
                 {
                     eixoX = random.Next(2, 8);
